@@ -1,0 +1,22 @@
+.container {
+  max-width: 1200px;
+  border: 1px solid #a0bee6;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#recipient-name::placeholder {
+  color: #a0bee6;
+  text-align: center;
+}
