@@ -1,8 +1,7 @@
 .container {
   max-width: 1200px;
   border: 1px solid #a0bee6;
-  margin: 0 auto;
-  min-height: 100vh;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,4 +18,20 @@
 #recipient-name::placeholder {
   color: #a0bee6;
   text-align: center;
+}
+
+.titles {
+  width: 100%;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #111;
+}
+
+.pgt-styles {
+  background-color: #3dea02;
+  padding: 5px;
+  border-radius: 5px;
+  color: red;
 }
