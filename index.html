@@ -1,132 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="titles">
-        <div>
-          <span style="font-size: 24px">Processo</span>
-          <span style="margin-left: 10px; font-size: 13px">01/2023</span>
-        </div>
-        <div>
-          <span style="color: red">Situação de pagamento: </span
-          ><span class="pgt-styles">Válida</span>
-        </div>
-        <div>
-          <span style="font-weight: 600">Situação: </span>
-          <span style="margin-left: 10px; font-size: 16px">Análise</span>
-        </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="titles">
+      <div>
+        <span style="font-size: 24px; font-weight: 600;">Processo</span>
+        <span style="margin-left: 10px; font-size: 13px">01/2023</span>
       </div>
-      <div class="modal fade" id="modal-mensagem">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">
-                <span>×</span>
-              </button>
-              <h4 class="modal-title">Processo</h4>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label"
-                    >Encaminhar:</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="Unidade / Posto Atendimento"
-                    class="form-control"
-                    id="recipient-name"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label"
-                    >Atribuir:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
-                  >
-                  <input
-                    type="text"
-                    placeholder="Usuário"
-                    class="form-control"
-                    id="recipient-name"
-                  />
-                </div>
-                <div style="display: flex" class="form-group">
-                  <label
-                    style="visibility: hidden"
-                    for="recipient-name"
-                    class="col-form-label"
-                    >Atribuir:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
-                  >
-                  <textarea class="form-control" id="message-text"></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <div
-                style="
+      <div>
+        <span style="color: red">Situação de pagamento: </span><span class="pgt-styles">Válida</span>
+      </div>
+      <div>
+        <span style="font-weight: 600">Situação: </span>
+        <span style="margin-left: 10px; font-size: 16px">Análise</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 5px" class="subtitles">
+
+      <div>
+        <span style="font-size: 16px; font-weight: 600;">Posto de Atendimento: </span><span style="font-size: 15px;">Superfácil</span>
+      </div>
+    </div>
+
+    <div class="box-main">
+      <div class="info-cidadao">
+        <h3 style="font-size: 17px;">Lucas Matheus Gomes Da Silva</h3>
+        <p>CPF: <span>000.000.000-00</span></p>
+        <p>RG: <span>00.000.000-0</span></p>
+        <hr>
+        <p>Último acesso: <span>10/02/2023</span></p>
+        <p>Hora: <span>00:00</span></p>
+        <br />
+        <p style="color: red; text-align: center;">Histórico de processos vinculados a esse cidadão - por CPF/RG</span></p>
+      </div>
+
+      <div class="emissao-registro">
+        <div class="bloco-one">
+          <p>Emissão de registro civil</p>
+          <button style="font-weight: 600;" class="btn btn-primary" data-toggle="modal" data-target="#modal-mensagem">
+            Encaminhar ▶️
+          </button>
+        </div>
+
+        <div class="bloco-two">
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-mensagem">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span>×</span>
+            </button>
+            <h4 class="modal-title">Processo</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Encaminhar:</label>
+                <input type="text" placeholder="Unidade / Posto Atendimento" class="form-control" id="recipient-name" />
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Atribuir:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" placeholder="Usuário" class="form-control" id="recipient-name" />
+              </div>
+              <div style="display: flex" class="form-group">
+                <label style="visibility: hidden" for="recipient-name" class="col-form-label">Atribuir:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div style="
                   display: flex;
                   justify-content: space-between;
                   align-items: center;
-                "
-                class="form-group"
-              >
-                <div
-                  style="
+                " class="form-group">
+              <div style="
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                  "
-                >
-                  <label for="recipient-name" class="col-form-label"
-                    >Situação:&nbsp;&nbsp;</label
-                  >
+                  ">
+                <label for="recipient-name" class="col-form-label">Situação:&nbsp;&nbsp;</label>
 
-                  <input type="text" class="form-control" id="recipient-name" />
-                </div>
-
-                <button
-                  style="background-color: #a0bee6; font-weight: 500"
-                  type="button"
-                  class="btn-modal btn btn-default"
-                  data-dismiss="modal"
-                >
-                  Enviar
-                </button>
+                <input type="text" class="form-control" id="recipient-name" />
               </div>
+
+              <button style="background-color: #a0bee6; font-weight: 500" type="button" class="btn-modal btn btn-default" data-dismiss="modal">
+                Enviar
+              </button>
             </div>
           </div>
         </div>
       </div>
-
-      <button
-        class="btn btn-primary"
-        data-toggle="modal"
-        data-target="#modal-mensagem"
-      >
-        Exibir mensagem
-      </button>
     </div>
-    <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-      $(function () {
-        //código para exibir os modais
-        $("#btn-mensagem").click(function () {
-          $("#modal-mensagem").modal();
-        });
+
+
+  </div>
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      //código para exibir os modais
+      $("#btn-mensagem").click(function () {
+        $("#modal-mensagem").modal();
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

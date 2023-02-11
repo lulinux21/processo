@@ -1,6 +1,8 @@
 .container {
   max-width: 1200px;
-  border: 1px solid #a0bee6;
+  border: 3px solid #111;
+  padding: 10px 0;
+  border-radius: 10px;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
@@ -26,7 +28,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #111;
+}
+
+.subtitles {
+  width: 100%;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pgt-styles {
@@ -34,4 +43,36 @@
   padding: 5px;
   border-radius: 5px;
   color: red;
+}
+
+.box-main {
+  width: 100%;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.info-cidadao {
+  background-color: #a0bee6;
+  flex: 30%;
+  padding: 10px;
+}
+
+.emissao-registro {
+  flex: 70%;
+  padding: 10px;
+  /* margin-top: -82px; */
+}
+
+.bloco-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 3px solid darkblue;
+  padding-bottom: 10px;
 }
